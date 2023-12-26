@@ -259,8 +259,7 @@ def main(args, tlogger):
     best_eval_name = "null"
 
     if args.use_wandb:
-        wandb.init(entity=args.wandb_entity,
-                   project=args.project_name,
+        wandb.init(project=args.project_name,
                    name=args.exp_name,
                    config=args)
         wandb.run.summary["best_acc"] = best_acc
