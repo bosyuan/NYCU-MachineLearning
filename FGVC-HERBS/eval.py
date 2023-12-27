@@ -276,7 +276,7 @@ def evaluate(args, model, test_loader):
                 if acc >= best_top1:
                     best_top1 = acc
                     best_top1_name = name
-
+        eval_acces["best_accuracy"] = best_top1
     return best_top1, best_top1_name, eval_acces
 
 
