@@ -1,0 +1,23 @@
+
+
+[95mStart Training 1 Epoch[39m..0%..10%
+Traceback (most recent call last):
+  File "main.py", line 324, in <module>
+    main(args, tlogger)
+  File "main.py", line 276, in main
+    train(args, epoch, model, scaler, amp_context, optimizer, schedule, train_loader)
+  File "main.py", line 229, in train
+    scaler.step(optimizer)
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 338, in step
+    retval = self._maybe_opt_step(optimizer, optimizer_state, *args, **kwargs)
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 285, in _maybe_opt_step
+    retval = optimizer.step(*args, **kwargs)
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/optim/optimizer.py", line 88, in wrapper
+    return func(*args, **kwargs)
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/optim/sgd.py", line 136, in step
+    F.sgd(params_with_grad,
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/optim/_functional.py", line 176, in sgd
+    d_p = d_p.add(buf, alpha=momentum)
+KeyboardInterrupt

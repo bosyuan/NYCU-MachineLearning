@@ -1,0 +1,190 @@
+2023-12-26 18:26:59,757 INFO    StreamThr :35053 [internal.py:wandb_internal():86] W&B internal server running at pid: 35053, started at: 2023-12-26 18:26:59.755743
+2023-12-26 18:26:59,812 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: status
+2023-12-26 18:26:59,910 INFO    WriterThread:35053 [datastore.py:open_for_write():85] open: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/run-yh03mslw.wandb
+2023-12-26 18:26:59,916 DEBUG   SenderThread:35053 [sender.py:send():382] send: header
+2023-12-26 18:27:00,209 DEBUG   SenderThread:35053 [sender.py:send():382] send: run
+2023-12-26 18:27:00,805 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: check_version
+2023-12-26 18:27:00,931 INFO    SenderThread:35053 [dir_watcher.py:__init__():211] watching files in: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files
+2023-12-26 18:27:00,931 INFO    SenderThread:35053 [sender.py:_start_run_threads():1136] run started: yh03mslw with start time 1703586419.767866
+2023-12-26 18:27:00,931 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: check_version
+2023-12-26 18:27:01,146 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: run_start
+2023-12-26 18:27:01,159 DEBUG   HandlerThread:35053 [system_info.py:__init__():32] System info init
+2023-12-26 18:27:01,159 DEBUG   HandlerThread:35053 [system_info.py:__init__():47] System info init done
+2023-12-26 18:27:01,159 INFO    HandlerThread:35053 [system_monitor.py:start():194] Starting system monitor
+2023-12-26 18:27:01,160 INFO    SystemMonitor:35053 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-26 18:27:01,162 INFO    HandlerThread:35053 [system_monitor.py:probe():214] Collecting system info
+2023-12-26 18:27:01,178 INFO    SystemMonitor:35053 [interfaces.py:start():190] Started cpu monitoring
+2023-12-26 18:27:01,179 INFO    SystemMonitor:35053 [interfaces.py:start():190] Started disk monitoring
+2023-12-26 18:27:01,180 INFO    SystemMonitor:35053 [interfaces.py:start():190] Started gpu monitoring
+2023-12-26 18:27:01,186 INFO    SystemMonitor:35053 [interfaces.py:start():190] Started memory monitoring
+2023-12-26 18:27:01,229 INFO    SystemMonitor:35053 [interfaces.py:start():190] Started network monitoring
+2023-12-26 18:27:01,367 DEBUG   HandlerThread:35053 [system_info.py:probe():196] Probing system
+2023-12-26 18:27:01,457 DEBUG   HandlerThread:35053 [system_info.py:_probe_git():181] Probing git
+2023-12-26 18:27:01,512 DEBUG   HandlerThread:35053 [system_info.py:_probe_git():189] Probing git done
+2023-12-26 18:27:01,512 DEBUG   HandlerThread:35053 [system_info.py:probe():244] Probing system done
+2023-12-26 18:27:01,512 DEBUG   HandlerThread:35053 [system_monitor.py:probe():223] {'os': 'Linux-4.15.0-213-generic-x86_64-with-glibc2.27', 'python': '3.8.0', 'heartbeatAt': '2023-12-26T10:27:01.367666', 'startedAt': '2023-12-26T10:26:59.713636', 'docker': None, 'cuda': None, 'args': ('--c', 'configs/config.yaml'), 'state': 'running', 'program': 'main.py', 'codePathLocal': 'main.py', 'codePath': 'FGVC-HERBS/main.py', 'git': {'remote': 'git@github.com:bosyuan/NYCU-MachineLearning.git', 'commit': '8e79779b714d86c7e6d4ec1ea98ff1f0d6247be0'}, 'email': 'bosyuanhou@gmail.com', 'root': '/home/bshou/NYCU-MachineLearning', 'host': 'VLLab_24_146', 'username': 'bshou', 'executable': '/home/bshou/bshou-FLD/bin/python', 'cpu_count': 20, 'cpu_count_logical': 40, 'cpu_freq': {'current': 2579.797975, 'min': 1000.0, 'max': 3200.0}, 'cpu_freq_per_core': [{'current': 2538.88, 'min': 1000.0, 'max': 3200.0}, {'current': 2637.132, 'min': 1000.0, 'max': 3200.0}, {'current': 2408.116, 'min': 1000.0, 'max': 3200.0}, {'current': 2643.888, 'min': 1000.0, 'max': 3200.0}, {'current': 2474.442, 'min': 1000.0, 'max': 3200.0}, {'current': 2682.414, 'min': 1000.0, 'max': 3200.0}, {'current': 2679.04, 'min': 1000.0, 'max': 3200.0}, {'current': 2637.649, 'min': 1000.0, 'max': 3200.0}, {'current': 2621.579, 'min': 1000.0, 'max': 3200.0}, {'current': 2608.492, 'min': 1000.0, 'max': 3200.0}, {'current': 2700.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2700.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2700.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2686.112, 'min': 1000.0, 'max': 3200.0}, {'current': 2577.605, 'min': 1000.0, 'max': 3200.0}, {'current': 2650.33, 'min': 1000.0, 'max': 3200.0}, {'current': 2569.93, 'min': 1000.0, 'max': 3200.0}, {'current': 2526.609, 'min': 1000.0, 'max': 3200.0}, {'current': 2649.077, 'min': 1000.0, 'max': 3200.0}, {'current': 2427.483, 'min': 1000.0, 'max': 3200.0}, {'current': 2539.862, 'min': 1000.0, 'max': 3200.0}, {'current': 2635.869, 'min': 1000.0, 'max': 3200.0}, {'current': 2402.259, 'min': 1000.0, 'max': 3200.0}, {'current': 2642.782, 'min': 1000.0, 'max': 3200.0}, {'current': 2477.674, 'min': 1000.0, 'max': 3200.0}, {'current': 2683.835, 'min': 1000.0, 'max': 3200.0}, {'current': 2678.305, 'min': 1000.0, 'max': 3200.0}, {'current': 2636.424, 'min': 1000.0, 'max': 3200.0}, {'current': 2621.212, 'min': 1000.0, 'max': 3200.0}, {'current': 2606.699, 'min': 1000.0, 'max': 3200.0}, {'current': 2700.0, 'min': 1000.0, 'max': 3200.0}, {'current': 2699.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2699.999, 'min': 1000.0, 'max': 3200.0}, {'current': 2693.889, 'min': 1000.0, 'max': 3200.0}, {'current': 2583.096, 'min': 1000.0, 'max': 3200.0}, {'current': 2649.355, 'min': 1000.0, 'max': 3200.0}, {'current': 2572.693, 'min': 1000.0, 'max': 3200.0}, {'current': 2523.192, 'min': 1000.0, 'max': 3200.0}, {'current': 2648.077, 'min': 1000.0, 'max': 3200.0}, {'current': 2424.777, 'min': 1000.0, 'max': 3200.0}], 'disk': {'/': {'total': 231.21038436889648, 'used': 159.83317184448242}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 10, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 251.54532623291016}}
+2023-12-26 18:27:01,512 INFO    HandlerThread:35053 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-26 18:27:01,512 INFO    HandlerThread:35053 [system_monitor.py:probe():227] Publishing system info
+2023-12-26 18:27:01,512 DEBUG   HandlerThread:35053 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-26 18:27:01,513 DEBUG   HandlerThread:35053 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-26 18:27:01,514 INFO    HandlerThread:35053 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-26 18:27:01,524 DEBUG   SenderThread:35053 [sender.py:send():382] send: files
+2023-12-26 18:27:01,524 INFO    SenderThread:35053 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2023-12-26 18:27:01,547 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-26 18:27:01,550 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: stop_status
+2023-12-26 18:27:01,564 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-26 18:27:01,791 DEBUG   SenderThread:35053 [sender.py:send():382] send: telemetry
+2023-12-26 18:27:01,791 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: summary_record
+2023-12-26 18:27:01,792 INFO    SenderThread:35053 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-26 18:27:01,792 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: summary_record
+2023-12-26 18:27:01,792 INFO    SenderThread:35053 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-26 18:27:01,793 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: summary_record
+2023-12-26 18:27:01,866 INFO    Thread-12 :35053 [dir_watcher.py:_on_file_created():271] file/dir created: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/wandb-metadata.json
+2023-12-26 18:27:01,866 INFO    Thread-12 :35053 [dir_watcher.py:_on_file_created():271] file/dir created: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/wandb-summary.json
+2023-12-26 18:27:01,866 INFO    Thread-12 :35053 [dir_watcher.py:_on_file_created():271] file/dir created: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/requirements.txt
+2023-12-26 18:27:01,947 INFO    SenderThread:35053 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-26 18:27:02,302 INFO    wandb-upload_0:35053 [upload_job.py:push():131] Uploaded file /tmp/tmpfwmspwovwandb/6sy3sxf2-wandb-metadata.json
+2023-12-26 18:27:02,864 INFO    Thread-12 :35053 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/wandb-summary.json
+2023-12-26 18:27:02,865 INFO    Thread-12 :35053 [dir_watcher.py:_on_file_created():271] file/dir created: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/output.log
+2023-12-26 18:27:03,890 DEBUG   SenderThread:35053 [sender.py:send():382] send: exit
+2023-12-26 18:27:03,890 INFO    SenderThread:35053 [sender.py:send_exit():589] handling exit code: 1
+2023-12-26 18:27:03,890 INFO    SenderThread:35053 [sender.py:send_exit():591] handling runtime: 2
+2023-12-26 18:27:03,891 INFO    SenderThread:35053 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-26 18:27:03,891 INFO    SenderThread:35053 [sender.py:send_exit():597] send defer
+2023-12-26 18:27:03,927 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:03,928 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-26 18:27:03,928 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:03,928 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 0
+2023-12-26 18:27:03,928 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 1
+2023-12-26 18:27:03,928 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:03,928 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-26 18:27:03,928 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:03,928 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 1
+2023-12-26 18:27:03,929 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 2
+2023-12-26 18:27:03,929 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:03,929 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-26 18:27:03,929 INFO    HandlerThread:35053 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-26 18:27:03,929 DEBUG   SystemMonitor:35053 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-26 18:27:03,929 DEBUG   SystemMonitor:35053 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-26 18:27:03,929 DEBUG   SystemMonitor:35053 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-26 18:27:03,931 INFO    HandlerThread:35053 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-26 18:27:03,932 INFO    HandlerThread:35053 [interfaces.py:finish():202] Joined disk monitor
+2023-12-26 18:27:04,865 INFO    Thread-12 :35053 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/output.log
+2023-12-26 18:27:04,866 INFO    Thread-12 :35053 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/wandb-summary.json
+2023-12-26 18:27:06,868 INFO    Thread-12 :35053 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/output.log
+2023-12-26 18:27:08,205 INFO    HandlerThread:35053 [interfaces.py:finish():202] Joined gpu monitor
+2023-12-26 18:27:08,206 INFO    HandlerThread:35053 [interfaces.py:finish():202] Joined memory monitor
+2023-12-26 18:27:08,206 INFO    HandlerThread:35053 [interfaces.py:finish():202] Joined network monitor
+2023-12-26 18:27:08,207 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-26 18:27:08,207 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: status_report
+2023-12-26 18:27:08,208 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:08,208 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 2
+2023-12-26 18:27:08,208 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 3
+2023-12-26 18:27:08,209 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: poll_exit
+2023-12-26 18:27:08,209 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:08,209 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-26 18:27:08,210 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:08,210 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 3
+2023-12-26 18:27:08,210 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 4
+2023-12-26 18:27:08,210 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:08,210 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-26 18:27:08,211 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:08,211 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 4
+2023-12-26 18:27:08,211 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 5
+2023-12-26 18:27:08,211 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:08,211 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-26 18:27:08,212 DEBUG   SenderThread:35053 [sender.py:send():382] send: summary
+2023-12-26 18:27:08,215 INFO    SenderThread:35053 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-26 18:27:08,216 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:08,216 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 5
+2023-12-26 18:27:08,216 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 6
+2023-12-26 18:27:08,216 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:08,216 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-26 18:27:08,216 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:08,217 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 6
+2023-12-26 18:27:08,222 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: status_report
+2023-12-26 18:27:08,464 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 7
+2023-12-26 18:27:08,464 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:08,464 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-26 18:27:08,465 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:08,465 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 7
+2023-12-26 18:27:08,868 INFO    Thread-12 :35053 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/wandb-summary.json
+2023-12-26 18:27:08,869 INFO    Thread-12 :35053 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/config.yaml
+2023-12-26 18:27:09,893 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-26 18:27:11,920 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 8
+2023-12-26 18:27:11,920 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:11,920 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-26 18:27:11,921 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:11,921 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 8
+2023-12-26 18:27:11,921 INFO    SenderThread:35053 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-26 18:27:11,922 INFO    SenderThread:35053 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-12-26 18:27:11,998 INFO    SenderThread:35053 [job_builder.py:build():404] adding wandb-job metadata file
+2023-12-26 18:27:12,004 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 9
+2023-12-26 18:27:12,005 DEBUG   SenderThread:35053 [sender.py:send():382] send: artifact
+2023-12-26 18:27:12,005 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:12,008 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-26 18:27:12,870 INFO    Thread-12 :35053 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/output.log
+2023-12-26 18:27:13,015 INFO    SenderThread:35053 [sender.py:send_artifact():1470] sent artifact job-git_github.com_bosyuan_NYCU-MachineLearning.git_FGVC-HERBS_main.py - {'id': 'QXJ0aWZhY3Q6Njc0OTIyMTE1', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyNTc2MjQxMQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njc0OTIyMTE1', 'versionIndex': 0}}}
+2023-12-26 18:27:13,015 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:13,015 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 9
+2023-12-26 18:27:13,015 INFO    SenderThread:35053 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-26 18:27:13,871 INFO    SenderThread:35053 [dir_watcher.py:finish():388] scan: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files
+2023-12-26 18:27:13,872 INFO    SenderThread:35053 [dir_watcher.py:finish():402] scan save: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/wandb-summary.json wandb-summary.json
+2023-12-26 18:27:13,872 INFO    SenderThread:35053 [dir_watcher.py:finish():402] scan save: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/output.log output.log
+2023-12-26 18:27:13,872 INFO    SenderThread:35053 [dir_watcher.py:finish():402] scan save: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/config.yaml config.yaml
+2023-12-26 18:27:13,872 INFO    SenderThread:35053 [dir_watcher.py:finish():402] scan save: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/wandb-metadata.json wandb-metadata.json
+2023-12-26 18:27:13,873 INFO    SenderThread:35053 [dir_watcher.py:finish():402] scan save: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/requirements.txt requirements.txt
+2023-12-26 18:27:13,873 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 10
+2023-12-26 18:27:13,874 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:13,874 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-26 18:27:13,878 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:13,878 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 10
+2023-12-26 18:27:13,878 INFO    SenderThread:35053 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-26 18:27:14,338 INFO    wandb-upload_0:35053 [upload_job.py:push():131] Uploaded file /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/wandb-summary.json
+2023-12-26 18:27:14,373 INFO    wandb-upload_1:35053 [upload_job.py:push():131] Uploaded file /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/output.log
+2023-12-26 18:27:14,502 INFO    wandb-upload_3:35053 [upload_job.py:push():131] Uploaded file /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/requirements.txt
+2023-12-26 18:27:14,503 INFO    wandb-upload_2:35053 [upload_job.py:push():131] Uploaded file /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/files/config.yaml
+2023-12-26 18:27:14,703 INFO    Thread-11 :35053 [sender.py:transition_state():617] send defer: 11
+2023-12-26 18:27:14,704 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:14,704 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-26 18:27:14,705 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:14,705 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 11
+2023-12-26 18:27:14,705 INFO    SenderThread:35053 [file_pusher.py:join():181] waiting for file pusher
+2023-12-26 18:27:14,705 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 12
+2023-12-26 18:27:14,705 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:14,705 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-26 18:27:14,705 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:14,705 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 12
+2023-12-26 18:27:14,706 INFO    SenderThread:35053 [file_stream.py:finish():595] file stream finish called
+2023-12-26 18:27:14,895 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-26 18:27:14,905 INFO    SenderThread:35053 [file_stream.py:finish():599] file stream finish is done
+2023-12-26 18:27:14,905 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 13
+2023-12-26 18:27:14,905 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:14,905 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-26 18:27:14,905 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:14,905 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 13
+2023-12-26 18:27:14,906 INFO    SenderThread:35053 [sender.py:transition_state():617] send defer: 14
+2023-12-26 18:27:14,906 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: defer
+2023-12-26 18:27:14,906 INFO    HandlerThread:35053 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-26 18:27:14,906 DEBUG   SenderThread:35053 [sender.py:send():382] send: final
+2023-12-26 18:27:14,906 DEBUG   SenderThread:35053 [sender.py:send():382] send: footer
+2023-12-26 18:27:14,906 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: defer
+2023-12-26 18:27:14,906 INFO    SenderThread:35053 [sender.py:send_request_defer():613] handle sender defer: 14
+2023-12-26 18:27:14,908 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-26 18:27:14,908 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: server_info
+2023-12-26 18:27:14,908 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-26 18:27:14,908 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-26 18:27:14,908 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-26 18:27:14,908 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: poll_exit
+2023-12-26 18:27:14,909 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: server_info
+2023-12-26 18:27:14,912 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: job_info
+2023-12-26 18:27:15,093 DEBUG   SenderThread:35053 [sender.py:send_request():409] send_request: job_info
+2023-12-26 18:27:15,093 INFO    MainThread:35053 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2023-12-26 18:27:15,093 INFO    MainThread:35053 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2023-12-26 18:27:15,094 INFO    MainThread:35053 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2023-12-26 18:27:15,094 DEBUG   HandlerThread:35053 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-26 18:27:15,095 INFO    HandlerThread:35053 [handler.py:finish():866] shutting down handler
+2023-12-26 18:27:15,912 INFO    WriterThread:35053 [datastore.py:close():294] close: /home/bshou/NYCU-MachineLearning/FGVC-HERBS/wandb/run-20231226_182659-yh03mslw/run-yh03mslw.wandb
+2023-12-26 18:27:16,093 INFO    SenderThread:35053 [sender.py:finish():1548] shutting down sender
+2023-12-26 18:27:16,093 INFO    SenderThread:35053 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-26 18:27:16,094 INFO    SenderThread:35053 [file_pusher.py:join():181] waiting for file pusher

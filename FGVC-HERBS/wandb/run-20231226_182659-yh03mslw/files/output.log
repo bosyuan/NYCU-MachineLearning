@@ -1,0 +1,40 @@
+
+[95mStart Training 1 Epoch
+Traceback (most recent call last):
+  File "main.py", line 324, in <module>
+    main(args, tlogger)
+  File "main.py", line 276, in main
+    train(args, epoch, model, scaler, amp_context, optimizer, schedule, train_loader)
+  File "main.py", line 149, in train
+    outs = model(datas)
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bshou/NYCU-MachineLearning/FGVC-HERBS/models/pim_module/pim_module.py", line 534, in forward
+    x = self.forward_backbone(x)
+  File "/home/bshou/NYCU-MachineLearning/FGVC-HERBS/models/pim_module/pim_module.py", line 492, in forward_backbone
+    return self.backbone(x)
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bshou/NYCU-MachineLearning/FGVC-HERBS/timm/models/swin_transformer.py", line 544, in forward
+    x = self.forward_features(x)
+  File "/home/bshou/NYCU-MachineLearning/FGVC-HERBS/timm/models/swin_transformer.py", line 536, in forward_features
+    l3 = self.layers[2](l2)
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bshou/NYCU-MachineLearning/FGVC-HERBS/timm/models/swin_transformer.py", line 413, in forward
+    x = blk(x)
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bshou/NYCU-MachineLearning/FGVC-HERBS/timm/models/swin_transformer.py", line 308, in forward
+    x = x + self.drop_path(self.mlp(self.norm2(x)))
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bshou/NYCU-MachineLearning/FGVC-HERBS/timm/models/layers/mlp.py", line 21, in forward
+    x = self.fc1(x)
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 103, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/bshou/bshou-FLD/lib/python3.8/site-packages/torch/nn/functional.py", line 1848, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: CUDA out of memory. Tried to allocate 28.00 MiB (GPU 0; 10.75 GiB total capacity; 9.37 GiB already allocated; 17.62 MiB free; 9.57 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
