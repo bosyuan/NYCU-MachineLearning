@@ -49,6 +49,7 @@ def set_environment(args, tlogger):
     else:
         print("    Validation Samples: 0 ~~~~~> [Only Training]")
     tlogger.print()
+    schedule = cosine_decay(args, len(train_loader), args.save_dir)
 
     ### = = = =  Model = = = =  
     tlogger.print("Building Model....")

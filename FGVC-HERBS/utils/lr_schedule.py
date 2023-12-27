@@ -24,7 +24,7 @@ def cosine_decay(args, batchs: int, result_dir, decay_type: int = 1):
     #     schedule = np.concatenate((warmup_lr_schedule, schedule))
 
     #set first 10% of iterations to warmup
-    warmup_lr_schedule = np.linspace(1e-9, args.max_lr, total_batchs/10)
+    warmup_lr_schedule = np.linspace(1e-9, args.max_lr, int(total_batchs/10))
     schedule = np.concatenate((warmup_lr_schedule, schedule))
 
     plot_schedule(schedule, result_dir)
