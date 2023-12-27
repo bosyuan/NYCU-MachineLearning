@@ -115,7 +115,7 @@ def train(args, epoch, model, scaler, amp_context, optimizer, schedule, train_lo
     # temperature = 2 ** (epoch // 10 - 1)
     temperature = 0.5 ** (epoch // 10) * args.temperature
     # temperature = args.temperature
-    
+     
     n_left_batchs = len(train_loader) % args.update_freq
 
     for batch_id, (ids, datas, labels) in enumerate(train_loader):

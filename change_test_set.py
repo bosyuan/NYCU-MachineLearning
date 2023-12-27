@@ -2,8 +2,8 @@ import pandas as pd
 import os
 from sklearn.model_selection import train_test_split
 
-root_directory = './FGVC-HERBS/CUB200-2011'
-train_directory = root_directory + '/train/'
+root_directory = './data'
+train_directory = root_directory + '/images/'
 val_directory = root_directory + '/validate/'
 all_classes = os.listdir(train_directory)
 
