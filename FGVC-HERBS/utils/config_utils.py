@@ -23,6 +23,7 @@ def get_args(with_deepspeed: bool=False):
 
     parser = argparse.ArgumentParser("Fine-Grained Visual Classification")
     parser.add_argument("--c", default="", type=str, help="config file path")
+    parser.add_argument("--update_freq", default=4, type=int, help="upadate frequency")
     args = parser.parse_args()
 
     load_yaml(args, args.c)

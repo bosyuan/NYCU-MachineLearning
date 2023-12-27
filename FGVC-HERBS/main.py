@@ -92,7 +92,7 @@ def set_environment(args, tlogger):
 
     tlogger.print()
 
-    schedule = cosine_decay(args, len(train_loader))
+    schedule = cosine_decay(args, len(train_loader), args.save_dir)
 
     if args.use_amp:
         scaler = torch.cuda.amp.GradScaler()
