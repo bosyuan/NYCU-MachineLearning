@@ -13,8 +13,9 @@ def cosine_decay(args, batchs: int, result_dir, decay_type: int = 1):
                              math.cos(math.pi * t / total_batchs)) for t in iters])
     elif decay_type == 2:
         # Cyclic cosine decay
-        cycle_length = iters // 4  # You can adjust this value based on your preference
-        schedule = np.array([0.5 * (args.max_lr - 1e-12) * (1 + np.cos(math.pi * (t % cycle_length) / cycle_length)) for t in iters])
+        cycle_length = int( len(iters) / 4 ) # You can adjust this value based on your preference
+        print("cycle_length: " + str(cycle_length))
+        schedule = np.array([0.5 * (args.max_lr - 1e-12) * (1 + math.cos(math.pi * (t % cycle_length) / cycle_length)) for t in iters])
     else:
         raise ValueError("Not support this deccay type")
     
@@ -27,7 +28,7 @@ def cosine_decay(args, batchs: int, result_dir, decay_type: int = 1):
     schedule = np.concatenate((warmup_lr_schedule, schedule))
 
     plot_schedule(schedule, result_dir)
-
+    print("done graph")
     return schedule
 
 def exponential_decay(args, batchs: int, result_dir):
