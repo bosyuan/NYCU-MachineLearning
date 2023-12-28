@@ -123,4 +123,8 @@ if __name__ == "__main__":
             outs = model(imgs)
             sum_outs = sum_all_out(outs, sum_type="softmax") # softmax
             preds = torch.sort(sum_outs, dim=-1, descending=True)[1]
-            print(preds)
+            print(preds, preds.shape)
+            for bi in range(preds.shape[0]):
+                print(preds[bi, 0])
+        imgs = []
+        img_paths = []

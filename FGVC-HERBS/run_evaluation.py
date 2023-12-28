@@ -133,6 +133,11 @@ if __name__ == "__main__":
                 sum_outs = sum_all_out(outs, sum_type="softmax") # softmax
                 preds = torch.sort(sum_outs, dim=-1, descending=True)[1]
                 for bi in range(preds.size(0)):
+                    # Get the predicted class index
+                    predicted_class = preds[bi, 0].item()
+
+                    # Print or save the predicted class for each file
+                    print(f"File: {img_paths[bi]}, Predicted Class: {predicted_class}")
                     if preds[bi, 0] == ci:
                         top1 += 1
                         top3 += 1
