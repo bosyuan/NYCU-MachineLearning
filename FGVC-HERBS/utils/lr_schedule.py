@@ -14,8 +14,7 @@ def cosine_decay(args, batchs: int, result_dir, decay_type: int = 1):
     elif decay_type == 2:
         # Cyclic cosine decay
         cycle_length = iters // 4  # You can adjust this value based on your preference
-
-        schedule = np.array([1e-12 + 0.5 * (args.max_lr - 1e-12) * (1 + math.cos(math.pi * (t % cycle_length) / cycle_length)) for t in iters])
+        schedule = np.array([0.5 * (args.max_lr - 1e-12) * (1 + np.cos(math.pi * (t % cycle_length) / cycle_length)) for t in iters])
     else:
         raise ValueError("Not support this deccay type")
     

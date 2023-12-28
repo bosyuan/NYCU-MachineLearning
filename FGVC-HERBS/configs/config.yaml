@@ -1,6 +1,6 @@
 project_name: FGVC-HERBS
 notes: 'no inverse'
-exp_name: basline_10percent_warmup_update_freq_8
+exp_name: basline_10percent_warmup_update_freq_8_circular_lr
 use_wandb: True
 wandb_entity: bosyuan
 train_root: ./CUB200-2011/train/
