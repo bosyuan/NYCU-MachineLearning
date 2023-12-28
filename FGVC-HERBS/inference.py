@@ -312,12 +312,14 @@ if __name__ == "__main__":
 
     imgs = []
     img_paths = []
+    pbar = tqdm.tqdm(total=len(files), ascii=True)
     with open(csv_file_path, 'w', newline='') as csvfile:
         fieldnames = ['id', 'label']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
         # Write header to the CSV file
         writer.writeheader()
+        update_n = 0
 
         for fi, f in enumerate(files):
             img_path = args.image_root + "/" + f
@@ -325,6 +327,7 @@ if __name__ == "__main__":
             img, ori_img = img_loader.load(img_path)
             img = img.unsqueeze(0) # add batch size dimension
             imgs.append(img)
+            update_n += 1
             if (fi+1) % 32 == 0 or fi == len(files) - 1:    
                 imgs = torch.cat(imgs, dim=0)
             else:
@@ -338,10 +341,12 @@ if __name__ == "__main__":
                     predicted_class = preds[bi, 0].item()
 
                     # Write the file path and predicted class to the CSV file
-                    pred_class_num = '{:03d}'.format(predicted_class)
-                    writer.writerow({'id': img_paths[bi], 'label': cub_200_classes[pred_class_num]})
-                    print(img_paths[bi], " class: " + cub_200_classes[pred_class_num])
+                    writer.writerow({'id': img_paths[bi][:-4], 'label': cub_200_classes[predicted_class]})
+                    print(img_paths[bi], " class: " + cub_200_classes[predicted_class])
 
             
             imgs = []
             img_paths = []
+            pbar.update(update_n)
+            update_n = 0
+    pbar.close()
