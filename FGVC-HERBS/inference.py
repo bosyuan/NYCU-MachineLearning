@@ -281,7 +281,7 @@ if __name__ == "__main__":
         help="contain {pretrained_root}/best.pt, {pretrained_root}/config.yaml")
     parser.add_argument("-ir", "--image_root", type=str)
     args = parser.parse_args()
-    csv_file_path = "predictions.csv"
+    csv_file_path = "basline_predictions.csv"
 
     load_yaml(args, args.pretrained_root + "/config.yaml")
 
@@ -338,9 +338,8 @@ if __name__ == "__main__":
                     predicted_class = preds[bi, 0].item()
 
                     # Write the file path and predicted class to the CSV file
-                    pred_class_num = '{:03d}'.format(predicted_class)
-                    writer.writerow({'id': img_paths[bi], 'label': cub_200_classes[pred_class_num]})
-                    print(img_paths[bi], " class: " + cub_200_classes[pred_class_num])
+                    writer.writerow({'id': img_paths[bi][:-4], 'label': cub_200_classes[predicted_class]})
+                    print(img_paths[bi], " class: " + cub_200_classes[predicted_class])
 
             
             imgs = []
