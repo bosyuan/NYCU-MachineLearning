@@ -1,6 +1,6 @@
 project_name: FGVC-HERBS
 notes: 'no inverse'
-exp_name: basline_10percent_warmup_update_freq_8_temperature_64
+exp_name: basline_10percent_warmup_update_freq_8_temperature_128
 use_wandb: True
 wandb_entity: bosyuan
 train_root: ./CUB200-2011/train/
@@ -34,4 +34,4 @@ lambda_c: 1.0
 update_freq: 8
 log_freq: 100
 eval_freq: 10
-temperature: 64
+temperature: 128
