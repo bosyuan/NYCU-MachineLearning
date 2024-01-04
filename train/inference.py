@@ -277,9 +277,9 @@ def sum_all_out(out, sum_type="softmax"):
 if __name__ == "__main__":
     # ===== 0. get setting =====
     parser = argparse.ArgumentParser("Visualize SwinT Large")
-    parser.add_argument("-pr", "--pretrained_root", type=str, 
+    parser.add_argument("-pr", "--pretrained_root", type=str, default="/records/FGVC-HERBS/basline_10percent_warmup_update_freq_8_circular_lr",
         help="contain {pretrained_root}/best.pt, {pretrained_root}/config.yaml")
-    parser.add_argument("-ir", "--image_root", type=str)
+    parser.add_argument("-ir", "--image_root", type=str, default="/CUB200-2011/test")
     args = parser.parse_args()
     csv_file_path = args.pretrained_root + "/predictions.csv"
 
