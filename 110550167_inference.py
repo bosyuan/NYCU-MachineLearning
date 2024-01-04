@@ -10,6 +10,7 @@ import cv2
 import os
 import json
 import argparse
+import sys
 sys.path.append("training")
 import training.timm
 import matplotlib
