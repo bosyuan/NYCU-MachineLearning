@@ -281,7 +281,7 @@ if __name__ == "__main__":
         help="contain {pretrained_root}/best.pt, {pretrained_root}/config.yaml")
     parser.add_argument("-ir", "--image_root", type=str, default="/CUB200-2011/test")
     args = parser.parse_args()
-    csv_file_path = args.pretrained_root + "/predictions.csv"
+    csv_file_path = "predictions.csv"
 
     load_yaml(args, args.pretrained_root + "/config.yaml")
 
