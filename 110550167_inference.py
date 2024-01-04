@@ -10,7 +10,8 @@ import cv2
 import os
 import json
 import argparse
-import timm
+sys.path.append("training")
+import training.timm
 import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -231,7 +232,7 @@ def build_model(pretrainewd_path: str,
                 use_selection: bool = True,
                 use_combiner: bool = True, 
                 comb_proj_size: int = None):
-    from models.pim_module.pim_module_eval import PluginMoodel
+    from training.models.pim_module.pim_module_eval import PluginMoodel
 
     model = \
         PluginMoodel(img_size = img_size,
