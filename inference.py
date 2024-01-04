@@ -10,7 +10,7 @@ import cv2
 import os
 import json
 import argparse
-import timm
+import train.timm
 import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -277,7 +277,7 @@ def sum_all_out(out, sum_type="softmax"):
 if __name__ == "__main__":
     # ===== 0. get setting =====
     parser = argparse.ArgumentParser("Visualize SwinT Large")
-    parser.add_argument("-pr", "--pretrained_root", type=str, default="/train/records/FGVC-HERBS/basline_10percent_warmup_update_freq_8_lamdab_0"
+    parser.add_argument("-pr", "--pretrained_root", type=str, default="/train/records/FGVC-HERBS/basline_10percent_warmup_update_freq_8_circular_lr",
         help="contain {pretrained_root}/best.pt, {pretrained_root}/config.yaml")
     parser.add_argument("-ir", "--image_root", type=str, default="/train/CUB200-2011/test")
     args = parser.parse_args()
