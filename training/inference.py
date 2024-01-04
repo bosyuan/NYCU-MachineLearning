@@ -10,7 +10,7 @@ import cv2
 import os
 import json
 import argparse
-import train.timm
+import timm
 import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -231,7 +231,7 @@ def build_model(pretrainewd_path: str,
                 use_selection: bool = True,
                 use_combiner: bool = True, 
                 comb_proj_size: int = None):
-    from train.models.pim_module.pim_module_eval import PluginMoodel
+    from models.pim_module.pim_module_eval import PluginMoodel
 
     model = \
         PluginMoodel(img_size = img_size,
@@ -277,9 +277,9 @@ def sum_all_out(out, sum_type="softmax"):
 if __name__ == "__main__":
     # ===== 0. get setting =====
     parser = argparse.ArgumentParser("Visualize SwinT Large")
-    parser.add_argument("-pr", "--pretrained_root", type=str, default="/train/records/FGVC-HERBS/basline_10percent_warmup_update_freq_8_circular_lr",
+    parser.add_argument("-pr", "--pretrained_root", type=str, default="records/FGVC-HERBS/basline_10percent_warmup_update_freq_8_circular_lr",
         help="contain {pretrained_root}/best.pt, {pretrained_root}/config.yaml")
-    parser.add_argument("-ir", "--image_root", type=str, default="/train/CUB200-2011/test")
+    parser.add_argument("-ir", "--image_root", type=str, default="CUB200-2011/test")
     args = parser.parse_args()
     csv_file_path = "predictions.csv"
 
